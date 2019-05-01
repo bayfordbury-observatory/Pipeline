@@ -21,3 +21,6 @@ $.pyc
 *.rar
 *.tar
 *.zip
+*.fit
+*.fts
+*.fits
