@@ -8,7 +8,7 @@ import sys
 from PIL import Image
 import math
 
-lib = ctypes.cdll.LoadLibrary("/mnt/c/Users/David/OneDrive - University of Hertfordshire/GitHub/pipeline/SN detection/v2/py.so")
+lib = ctypes.cdll.LoadLibrary("py.so")
 fun = lib.cfun
 fun.restype = None
 fun.argtypes =[ctypes.c_int,ctypes.c_int,ctypes.c_int,ctypes.c_int,ctypes.c_int,ctypes.c_float,ctypes.c_float,ctypes.c_float,ctypes.c_float,ctypes.c_float,ctypes.c_float,ctypes.c_float,ctypes.c_float,ctypes.c_float,ctypes.c_float,ctypes.c_float,ctypes.c_float,ctypes.c_float,ctypes.c_float,ndpointer(ctypes.c_float),ndpointer(ctypes.c_float),ndpointer(ctypes.c_float),ndpointer(ctypes.c_float),ndpointer(ctypes.c_float)]
